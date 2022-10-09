@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background: whitesmoke;
+}
+
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #add8e6;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.create_field {
+    display: none;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;   
+}
+
+header{background-color: #fff;}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+    background: #fff;
+}
+
+#header button{
+    font-family: inherit;
+    border: 1px solid red;
+}
+
+.create_field{
+    width: 370px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    background: whitesmoke;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.create_field h1{
+    color: black;
+    text-align: center;
+}
+
+#question, #answer{
+    width: 100%;
+    border-radius: 10px;
+    font-family: inherit;
+    border: 1px solid lightblue;
+    resize: none;
+}
+
+#save, #close{
+    width: fit-content;
+    position: relative;
+    top: 8px;
+}
+
+#flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.flashcard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 10px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+.flashcard h2{
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.card_btn{
+    top: 3%;
+    right: 2%;
+   position: absolute;
+   color: #1a1a1a;
+   transition: 0.3s ease-out;
+   border: none;
+}
+
+.card_btn:hover{
+    color: cadetblue;
+}
+
+.usr_answ {
+    display: none;
+}
+
+.usr_answ.visible {
+    display: block;
+}
+
+@media (max-width:1280px){
+    .container{width: 100%;}
+}
+
+@media (max-width: 760px){
+    .flashcard{margin: auto;}
+}
+
+.flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:480px){
+    #header{
+        padding: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #create_field{width: 95%;}
+
+    .flashcard{width: 100%;}
+}
